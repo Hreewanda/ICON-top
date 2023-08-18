@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
+*{
+margin: 2px 2px;
+box-sizing: border-box;
+color: white;
+font-family: "Poppins", sans-serif;
+
+
+}
+
+body{
+    background-color: #38e876;
+    
+}
+.logo{
+    margin: 4px 4px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+    border-radius: 5px;
+    padding: 5px 5px;
+
+    
+}
+.navbar{
+    margin-left: 2px;
+    
+}
+.navbar-brand img{
+    font-size: 3.5rem;
+    font-weight: bold;
+    width: 110px;
+    height: 70px;
+    border-radius: 4px;
+}
+.home{
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+    background-size: cover;
+    background-position: center;
+    margin: 4px 4px;
+    padding: 0 10%;
+    border-radius: 5px;
+
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    background-color: #4477CE;
+}
+.home-content h1{
+    color: #ffffff;
+    font-weight: 700;
+    
+}
+.home-content h3{
+    color: #ffffff;
+    font-weight: 500;
+
+}
+.home-content p{
+    font-size: 16px;
+    color: #ffffff;
+}
+.home-content .btn-box{
+    display: flex;
+    width: 150px;
+    height: 50px;
+}
+
+.me-auto{
+    margin-left: auto;
+}
+.navbar-nav .nav-item .nav-link:hover {
+    
+    color: rgb(23, 255, 124); /
+  }
