@@ -1,85 +1,362 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+            color: #54677c;
+        }
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        body {
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            display: flex;
+            /* Responsive behavior */
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 16px;
+        }
 
-<title>Conference Scope</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    /* margin: 0; */
-    padding: 0;
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    height: 100vh;
-  }
-  .card {
-    background-color: #fff;
-    padding: 50px;
-    
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
-    max-width: 800px;
-  }
-  .card h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 20px;
-    text-align: left;
-  }
-  .domains-list {
-    list-style-type: disc;
-    padding-left: 20px;
-    font-size: 20px;
-  }
-  .domains-list li {
-    margin: 10px 0;
-  }
-  .intro-line {
-    font-size: 20px;
-    color: #000000;
-    margin-bottom: 20px;
-  }
+        .heading {
+            text-align: center;
+            color: #fff;
+            font-size: 2em;
+            margin-right:650px;
+            margin-left: 650px;
+            margin-bottom: 75px;
+        }
 
-</style>
+        .card {
+            position: relative;
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+            padding: 16px;
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 15px 35px -15px rgba(0, 0, 0, 0.5),
+            0 5px 20px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .card-image img {
+            width: 100%;
+            transform: scale(1.2);
+        }
+
+        p {
+            line-height: 24px;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .name {
+            margin-top: 80px;
+            font-size: 1.4em;
+            color: #333;
+            font-weight: bold;
+            letter-spacing: 0.8px;
+            margin-bottom: 8px;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin: 12px 8px;
+            width: 44px;
+            height: 44px;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: opacity 0.4s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        button i {
+            color: #fff;
+            font-size: 1.4em;
+        }
+        .card-image.scaled-image img {
+          width: 100%;
+          margin-bottom: 50px;
+          transform: scale(0.65); 
+      
+    </style>
+    <title>Invited Speakers</title>
 </head>
 <body>
- 
+
+<h1 class="heading">Invited Speakers</h1>
+
 <div class="card">
-    <h2>Invited Speakers</h2>
-    <p class="intro-line">These are the confirmed speakers at our upcoming ICon TOP 2023:</p>
-    <ul class="domains-list">
-        <li>Prof. Jorge Odeja Castaneda</li>
-        <li>Prof. Virendra Mahajan</li>
-        <li>Prof. Kehar Singh</li>
-        <li>Prof. Yukitoshi Otani</li>
-        <li>Prof. Sourangshu Mukhopadhyay</li>
-        <li>Prof. Kedar Khare</li>
-        <li>Dr. Yasuhiro Mizutani</li>
-        <li>Prof. Nirmalya Ghosh</li>
-        <li>Prof. Partha Roy Chaudhuri</li>
-        <li>Dr. Jagannath Nayak</li>
-        <li>Prof. A.R. Ganesan</li>
-        <li>Prof. C.S. Narayanamurthy</li>
-        <li>Prof. Bosanta R Boruah</li>
-        <li>Dr. Rajan Jha</li>
-        <li>Prof. Naveen Nishchal</li>
-        <li>Dr. Somnath Bandyopadhyay</li>
-        <li>Prof. Partha Pratim Sahu</li>
-        <li>Dr. Kuntal Ghosh</li>
-        <li>Dr. T. Krishna Murthy</li>
-        <li>Moumita Dutta</li>
-      </ul>
-  
-  
- 
+    <div class="card-image">
+        <img src="Prof. 1.jpg" alt="Profile image">
+    </div>
+    <p class="name">Prof. Jorge Odeja Castaneda</p>
+    <p>University of Guanajuator</p>
+<p>Professor at University of Guanajuator</p></div>
+
+<div class="card">
+    <div class="card-image">
+        <img src="Prof 2.png" alt="Profile image">
+    </div>
+    <p class="name">Prof. Virendra Mahajan</p>
+    <p>The University of Arizona</p>
+    <p>Adjunct Professor of Optical
+      Sciences at Wyant college of
+      Optical science in The University
+      Of Arizona.</p>
 </div>
+<div class="card">
+  <div class="card-image">
+      <img src="Kehar singh.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Kehar Singh</p>
+  <p>IIT-Delhi</p>
+  <p>Optical physicist and an
+    emeritus fellow of the Indian
+    Institute of Technology, Delhi.</p>
+</div>
+
+<div class="card">
+  <div class="card-image">
+      <img src="yukitoshi otani.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Yukitoshi Otani</p>
+  <p>Utsunomiya University</p>
+<p>He is an Director, Ctr. for Optical
+  Research &amp; Education at
+  Utsunomiya University.</p></div>
+
+<div class="card">
+  <div class="card-image">
+      <img src="S. Mukho.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Sourangshu Mukhopadhyay</p>
+  <p>The University of Burdwan</p>
+<p>Professor at University of Burdwan</p></div>
+
+<div class="card">
+  <div class="card-image">
+      <img src="Kedar Khare.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Kedar Khare</p>
+  <p>IIT-Delhi</p>
+  <p>Associate Professor in the
+    Department of Physics, IIT-Delhi,
+    His research interests include
+    problems in computational optical
+    imaging.</p>
+</div>
+
+<div class="card">
+  <div class="card-image">
+      <img src="Yasuhiro.jpg" alt="Profile image">
+  </div>
+  <p class="name">Dr. Yasuhiro Mizutani</p>
+  <p>Osaka University</p>
+<p>Researcher at Osaka University</p></div>
+<div class="card">
+  <div class="card-image">
+      <img src="Nirmalya.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Nirmalya Ghosh</p>
+  <p>IISER , Kolkata</p>
+<p>Professor, research aims at
+  Optical Physics and Nano-
+  photonics, Polarization Optics and
+  bio photonics.</p></div><div class="card">
+  <div class="card-image">
+      <img src="partha roy.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Partha Roy Chaudhuri</p>
+  <p>IIT-Kharagpur</p>
+<p>Professor, research aims at
+  developing Optical Fiber
+  Components, Photonics Circuits
+  and Devices for applications in
+  communication and sensors.</p>
+</div><div class="card">
+  <div class="card-image scaled-image">
+    <img src="Jagannatha.png" alt="Profile image">
+</div>
+  <p class="name">Dr. Jagannath Nayak</p>
+  <p>CHESS</p>
+<p>Director at CHESS</p></div><div class="card">
+  <div class="card-image">
+      <img src="C.S Narayanamurthy.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. C.S. Narayanamurthy</p>
+  <p>IIST</p>
+  <p> aHe has multidisciplinary skills in
+    Research &amp; Development Sections
+    and also has a great experienced
+    Dr.Brahm Prakash Scientist in
+    Design and development of Opto
+    mechanical systems for space
+    borne sensors at Laboratory of Electro-Optics (LEOS), ISRO.</p>
+</div><div class="card">
+  <div class="card-image">
+      <img src="Bosanta.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Bosanta R Boruah</p>
+  <p>IIT-Guwahati</p>
+<p>Professor, Dept. of physics and
+  research works in Programmable
+  Diffractive Optics, Confocal and
+  Super-resolution Microscopy,
+  Theory of high numerical aperture
+  focusing, Wavefront sensing of
+  light beams, Free space line of
+  sight optical communication and
+  Optical trapping and manipulation
+  of microscopic particles.</p></div><div class="card">
+  <div class="card-image">
+      <img src="Rajan Jha.jpg" alt="Profile image">
+  </div>
+  <p class="name">Dr. Rajan Jha</p>
+  <p>IIT-Bhubaneswar</p>
+<p>
+  He is professor, HoS at IIT-
+Bhubaneswar and his research
+interests in Coupling Photonic
+nanostructures to Nano
+waveguides and resonators
+Semi-Classical and Quantum
+Interferometers Instrumentation
+for Industrial Applications and
+Structured Light Flexible and
+Wearable Photonics Plasmonics.
+</p></div>
+</div><div class="card">
+  <div class="card-image">
+      <img src="Naveen Nischal.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Naveen Nishchal</p>
+  <p>IIT-Patna</p>
+<p>
+  He is an associate professor at
+Dept. of Physics, IIT Patna. He also
+worked at RF Media Laboratory,
+Oulu Southern Institute, University
+of Oulu, Finland as a researcher.
+</p></div>
+</div><div class="card">
+  <div class="card-image">
+      <img src="Somnath.jpg" alt="Profile image">
+  </div>
+  <p class="name">Dr. Somnath Bandyopadhyay</p>
+  <p>CGCRI</p>
+<p>
+  He is Chief Scientist and Head of
+Fiber Optics and Photonics
+Division, CGCRI.
+</p></div>
+</div><div class="card">
+  <div class="card-image">
+      <img src="Partha.jpg" alt="Profile image">
+  </div>
+  <p class="name">Prof. Partha Pratim Sahu</p>
+  <p>Tezpur University</p>
+<p>
+  Professor of Dept of Electronics
+and Communication Engg Tezpur
+University.
+</p></div>
+</div><div class="card">
+  <div class="card-image">
+      <img src="Kuntal.jpg" alt="Profile image">
+  </div>
+  <p class="name">Dr. Kuntal Ghosh</p>
+  <p>ISI, Kolkata</p>
+<p>He is an Associate Professor at
+  ISI. His research
+  fields in computer science and
+  Artificial Intelligence.</p></div>
+</div><div class="card">
+  <div class="card-image">
+      <img src="Moumita.jpg" alt="Profile image">
+  </div>
+  <p class="name">Mrs. Moumita Dutta</p>
+  <p>Space Scientist, SAC, ISRO</p>
+<p>She is an Scientist of ISRO
+  expertise in the development and
+  testing of the Optical and IR
+  sensors/instruments/payloads
+  which involves state-of-the-art
+  technologies in the field of optics.</p></div>
+</div><div class="card">
+  <div class="card-image">
+      <img src="Krishna.jpg" alt="Profile image">
+  </div>
+  <p class="name">Dr. T. Krishna Murthy</p>
+  <p>Scientist, LEOS, ISRO</p>
+  <p>He has multidisciplinary skills in
+    Research &amp; Development Sections
+    and also has a great experienced
+    Dr.Brahm Prakash Scientist in
+    Design and development of Opto
+    mechanical systems for space
+    borne sensors at Laboratory of
+    
+    Electro-Optics (LEOS), ISRO.</p>
+</div>
+<div class="card">
+  <div class="card-image">
+      <img src="A.R Ganesan.jpg" alt="Profile image">
+  </div>
+  <p class="name">A.R Ganesan</p>
+  <p>IIT, Madras</p>
+  <p>Associate professor of Dept of
+    physics and research areas cover
+    with Adaptive Optics, Vision
+    Science, Laser Instrumentation,
+    Interferometry, Holography and
+    Optical metrology.</p>
+</div>
+<div class="card">
+  <div class="card-image">
+      <img src="ranbir.jpg" alt="Profile image">
+  </div>
+  <p class="name">Dr. Ranabir Mandal</p>
+  <p>University of Calcutta</p>
+  <p>Professor at Department of Applied Physics, University of Calcutta.</p>
+</div>
+
+
+
+
 </body>
 </html>
 
