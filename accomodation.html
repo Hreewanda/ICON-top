@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            width: 100%;
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            padding: 40px 16px;
+        }
+
+        .card {
+            width: 400px; /* Increased width */
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.15);
+            padding: 50px;
+            margin: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 2em;
+            color: #000;
+            margin-bottom: 16px;
+        }
+
+        p {
+            margin-bottom: 16px; /* Added margin for spacing */
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    <title>Accommodation for Conference</title>
+</head>
+<body>
+
+<div class="card">
+    <h1 class="heading">Accommodation for Conference</h1><br>
+    <p>To apply for accommodation, please click here</p><br>
+    <button onclick="window.location.href='https://docs.google.com/document/d/1ZJ-sTzNlJmd879aEl1Z7qYe5Mo4wkx4A/edit?usp=sharing&ouid=104678897377423301823&rtpof=true&sd=true'">
+        Accommodation form
+    </button>
+</div>
+
+</body>
+</html>
+
